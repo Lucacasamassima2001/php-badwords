@@ -1,3 +1,18 @@
+<?php
+
+    $paragrafo= $_GET["paragrafo"];
+    $lunghezza= strlen($paragrafo);
+    $parola= $_GET["word"];
+    $testocensura= str_replace($parola, "***", $paragrafo);
+    $lunghezza1= strlen($testocensura);
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +22,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Il tuo testo è lungo: <?php echo strlen($_GET["paragrafo"]);?> </h1>
+    <h1>Il tuo testo è lungo: <?php echo $lunghezza;?> </h1>
     <h1>Il tuo testo è:</h1>
-    <p><?php echo $_GET["paragrafo"];?></p>
+    <p><?php echo $paragrafo;?></p>
+
+    <h1>Il tuo testo censurato è lungo: <?php echo $lunghezza1;?> </h1>
+    <h1>Il tuo testo è:</h1>
+    <p><?php echo $testocensura;?></p>
 </body>
 </html>

@@ -1,9 +1,4 @@
-<?php
 
-$saluto = "ciao";
-
-
-?>
 
 
 
@@ -26,6 +21,6 @@ $saluto = "ciao";
 
 
     </form>
-    <!-- <?=  $saluto; ?> -->
+    
 </body>
 </html>
