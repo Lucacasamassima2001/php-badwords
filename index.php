@@ -18,7 +18,8 @@ $saluto = "ciao";
 <body>
     <h1>Compila il form</h1>
     <form action="script.php">
-        <input type="text" name="nome" placeholder="Scrivi qualcosa...">
+        <input type="text" name="paragrafo" placeholder="Scrivi qualcosa...">
+        <input type="text" name="word" placeholder="Censura una parola...">
         <button type="submit">Inviami</button>
         <button type="reset">Resettami</button>
 

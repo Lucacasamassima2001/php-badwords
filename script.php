@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Il tuo testo è <?php echo $_GET["nome"];?></p>
+    <h1>Il tuo testo è lungo: <?php echo strlen($_GET["paragrafo"]);?> </h1>
+    <h1>Il tuo testo è:</h1>
+    <p><?php echo $_GET["paragrafo"];?></p>
 </body>
 </html>
